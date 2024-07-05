@@ -24,6 +24,7 @@ export const onData = (socket) => async (data) => {
       console.log(`length: ${length}`);
       console.log(`packetType: ${packetType}`);
       console.log(packet);
+      console.log(packet.toString());
     } else {
       // 아직 전체 패킷이 도착하지 않음
       break;
